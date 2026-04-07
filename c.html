@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI EDU - AI 역량 로드맵</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap');
+        body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; }
+        
+        .nav-link { transition: all 0.3s; position: relative; }
+        .nav-link.active { color: #2563eb; font-weight: 700; }
+        .nav-link.active::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background: #2563eb; }
+
+        .gradient-text { background: linear-gradient(135deg, #1e40af, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .roadmap-card { transition: all 0.3s ease; border-left-width: 8px; }
+        .roadmap-card:hover { transform: translateX(10px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="text-slate-900 pb-20">
+
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="flex-shrink-0 flex items-center">
+                <a href="index.html" class="text-xl font-bold text-blue-600 flex items-center">
+                    <i class="fas fa-graduation-cap mr-2"></i> 미래 국어교사 AI EDU
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">행동계획 요약</a>
+                <a href="b.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">지식 라이브러리</a>
+                <a href="c.html" class="nav-link active">AI 역량 로드맵</a>
+            </div>
+            <div class="md:hidden flex items-center text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-6 py-16">
+        <header class="mb-16 text-center">
+            <div class="inline-block px-4 py-1 mb-4 text-xs font-black tracking-widest text-blue-600 bg-blue-50 rounded-full uppercase">Professional Roadmap</div>
+            <h1 class="text-4xl md:text-5xl font-black mb-6 gradient-text leading-tight">미래 국어교사<br>전공 역량 로드맵</h1>
+            <p class="text-slate-500 text-lg font-medium">국가 AI 행동계획(2026-2028)에 근거한 단계적 성장 전략</p>
+        </header>
+
+        <div class="space-y-10 relative">
+            <div class="roadmap-card bg-white p-8 rounded-[2rem] shadow-sm border-blue-500 relative z-10">
+                <div class="flex items-center mb-6">
+                    <div class="w-14 h-14 bg-blue-500 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-lg mr-5">01</div>
+                    <h2 class="text-2xl font-black text-slate-800">전공 기초 & AI 리터러시 함양</h2>
+                </div>
+                <ul class="space-y-4 text-slate-600 ml-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-book-bookmark text-blue-500 mt-1.5 mr-3"></i>
+                        <span><strong class="text-slate-900">국어학/문학 원전 학습:</strong> AI 생성 텍스트의 비문과 오류를 정확히 판별할 수 있는 심화 전공 지식 체득</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-microchip text-blue-500 mt-1.5 mr-3"></i>
+                        <span><strong class="text-slate-900">AI 원리 이해:</strong> 행동계획의 'AI 기초 소양'에 맞춘 생성형 AI 작동 원리 및 교육용 프롬프트 엔지니어링 실습</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="roadmap-card bg-white p-8 rounded-[2rem] shadow-sm border-indigo-500 relative z-10">
+                <div class="flex items-center mb-6">
+                    <div class="w-14 h-14 bg-indigo-500 text-white rounded-2xl flex items-center justify-center text-2xl font-bold shadow-lg mr-5">02</div>
+                    <h2 class="text-2xl font-black text-slate-800">AI 디지털 교과서 활용 능력</h2>
+                </div>
+                <ul class="space-y-4 text-slate-600 ml-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-laptop-code text-indigo-500 mt-1.5 mr-3"></i>
+                        <span><strong class="text-slate-900">에듀
