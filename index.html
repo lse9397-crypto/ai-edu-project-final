@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한민국 인공지능 행동계획 - 교육 혁신</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap');
+        
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+
+        #progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: linear-gradient(to right, #2563eb, #60a5fa);
+            width: 0%;
+            z-index: 1001;
+        }
+
+        .page-nav {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            padding: 6px;
+            border-radius: 20px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            gap: 4px;
+        }
+        .page-nav button {
+            padding: 10px 24px;
+            border-radius: 14px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+        .page-nav button.active {
+            background: #2563eb;
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+        .page-nav button:not(.active) { color: #64748b; }
+        .page-nav button:not(.active):hover { background: rgba(0, 0, 0, 0.05); }
+
+        .page-content { display: none; }
+        .page-content.active { display: block; }
+
+        #hero {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: #0f172a;
+        }
+
+        .term-highlight {
+            position: relative;
+            cursor: pointer;
+            color: #2563eb;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: all 0.2s;
+        }
+        .term-highlight:hover {
+            color: #1d4ed8;
+            background-color: #eff6ff;
+        }
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-card { transform: scale(0.9); transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); }
+        .modal-overlay.active .modal-card { transform: scale(1); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .policy-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 2rem;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s;
+            height: 100%;
+        }
+        .policy-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body class="text-slate-900 overflow-x-hidden">
+
+    <div id="progress-bar"></div>
+
+    <nav class="page-nav">
+        <button id="btn-page-a" onclick="switchPage('a')" class="active">교육 행동계획 요약</button>
+        <button id="btn-page-b" onclick="switchPage('b')">라이브러리</button>
+    </nav>
+
+    <!-- [PAGE A] 대한민국 인공지능 교육분야 행동계획 -->
+    <div id="page-a" class="page-content active">
+        <header id="hero" class="text-white px-6 overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-30">
+                <div class="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full blur-[120px]"></div>
+                <div class="absolute bottom-10 right-10 w-96 h-96 bg-indigo-600 rounded-full blur-[150px]"></div>
+            </div>
+            
+            <div class="max-w-5xl mx-auto relative z-10 text-center">
+                <span class="inline-block py-1 px-3 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold tracking-widest uppercase mb-6">AI Education Roadmap 2026-2028</span>
+                <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight">AI 교육 혁신<br><span class="text-blue-400">행동계획</span></h1>
+                <p class="text-slate-400 text-lg md:text-2xl max-w-3xl mx-auto font-light leading-relaxed">미래 세대를 위한 지능형 교육 환경과 인재 양성 전략을 제안합니다.</p>
+            </div>
+        </header>
+
+        <div class="max-w-6xl mx-auto px-6 py-24 relative z-20">
+            
+            <!-- Category 01 -->
+            <section id="topic1" class="mb-32">
+                <div class="flex items-center gap-4 mb-12 reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-bold text-2xl shadow-lg">01</div>
+                    <h2 class="text-4xl font-black tracking-tight">지능형 학습 체계 구축</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="policy-card reveal">
+                        <span class="text-blue-600 font-bold text-sm tracking-widest">No. 16</span>
+                        <h3 class="text-2xl font-bold mt-3 mb-5">AI 디지털 교과서 도입</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            학생 개개인의 학습 데이터 분석을 통해 최적의 학습 경로를 제시하는 <span class="term-highlight" onclick="openModal('AI 디지털 교과서')">AI 디지털 교과서</span>를 전면 도입하여 기초 학력을 보장하고 학습 효능감을 높입니다.
+                        </p>
+                    </div>
+                    <div class="policy-card reveal">
+                        <span class="text-blue-600 font-bold text-sm tracking-widest">No. 17</span>
+                        <h3 class="text-2xl font-bold mt-3 mb-5">에듀테크 생태계 활성화</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            학교 현장에서 검증된 고품질 <span class="term-highlight" onclick="openModal('K-에듀테크')">K-에듀테크</span> 기술을 공교육 서비스로 연계하여 교육 현장의 디지털 전환 가속화를 지원합니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category 02 -->
+            <section id="topic2" class="mb-32">
+                <div class="flex items-center gap-4 mb-12 reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center font-bold text-2xl shadow-lg">02</div>
+                    <h2 class="text-4xl font-black tracking-tight">교육 현장 혁신 및 인재 육성</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="policy-card reveal">
+                        <span class="text-emerald-600 font-bold text-sm tracking-widest">No. 60</span>
+                        <h3 class="text-2xl font-bold mt-3 mb-5">교사 AI 보조 시스템</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            교사의 행정 업무 부담을 줄여주는 <span class="term-highlight" onclick="openModal('지능형 행정 보조')">지능형 행정 보조</span> 기능을 강화하고, <span class="term-highlight" onclick="openModal('AI 코스웨어')">AI 코스웨어</span>를 통한 학생 맞춤형 지도 역량을 지원합니다.
+                        </p>
+                    </div>
+                    <div class="policy-card reveal">
+                        <span class="text-emerald-600 font-bold text-sm tracking-widest">No. 21 / 23</span>
+                        <h3 class="text-2xl font-bold mt-3 mb-5">고등 교육 및 전문 인재 확보</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            대학 내 <span class="term-highlight" onclick="openModal('AI 계약학과')">AI 계약학과</span> 및 특성화 대학원을 확대하여 산업계가 요구하는 고도의 전문성을 갖춘 AI 석·박사급 인력을 집중 양성합니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Category 03 -->
+            <section id="topic3" class="mb-32">
+                <div class="flex items-center gap-4 mb-12 reveal">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500 text-white flex items-center justify-center font-bold text-2xl shadow-lg">03</div>
+                    <h2 class="text-4xl font-black tracking-tight">안전 및 포용 교육</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="policy-card reveal">
+                        <span class="text-amber-600 font-bold text-sm tracking-widest">No. 93</span>
+                        <h3 class="text-2xl font-bold mt-3 mb-5">학습 데이터 보안 체계</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            교육 데이터 활용 시 학생의 <span class="term-highlight" onclick="openModal('데이터 주권')">데이터 주권</span>을 철저히 보호하고, 프라이버시가 보장되는 안전한 AI 교육 인프라를 구축합니다.
+                        </p>
+                    </div>
+                    <div class="policy-card reveal">
+                        <span class="text-amber-600 font-bold text-sm tracking-widest">No. 99</span>
+                        <h3 class="text-2xl font-bold mt-3 mb-5">전 국민 디지털 리터러시</h3>
+                        <p class="text-slate-600 leading-relaxed text-lg">
+                            계층 간 격차를 줄이는 <span class="term-highlight" onclick="openModal('디지털 포용 정책')">디지털 포용 정책</span>을 통해 전국민 <span class="term-highlight" onclick="openModal('디지털 리터러시 교육')">디지털 리터러시 교육</span>을 강화하여 AI 시대의 보편적 권리를 보장합니다.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Assistant Section -->
+            <section id="ai-playground" class="bg-indigo-950 p-12 rounded-[3.5rem] text-white shadow-2xl reveal">
+                <div class="flex items-center gap-5 mb-10">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-500 flex items-center justify-center font-bold text-2xl">✨</div>
+                    <h2 class="text-3xl font-bold tracking-tight">AI 정책 어시스턴트</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h4 class="font-bold text-lg text-indigo-200">교육 정책에 대해 무엇이든 물어보세요</h4>
+                        <input type="text" id="aiQuery" placeholder="예: AI 디지털 교과서 보급 계획을 알려줘" class="w-full bg-white/10 border border-white/20 rounded-2xl px-6 py-4 text-lg focus:outline-none focus:ring-2 focus:ring-indigo-400 placeholder-white/30">
+                        <button onclick="askAI()" class="w-full bg-white text-indigo-900 py-5 rounded-2xl font-black text-lg hover:bg-indigo-50 transition-all shadow-lg">답변 받기</button>
+                    </div>
+                    <div id="aiResponse" class="bg-white/5 border border-white/10 p-8 rounded-3xl text-lg min-h-[150px] flex items-start text-indigo-100 leading-relaxed italic">
+                        궁금한 점을 입력하시면 AI가 행동계획을 분석하여 답변해 드립니다.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- [PAGE B] 라이브러리 -->
+    <div id="page-b" class="page-content">
+        <header class="bg-slate-900 text-white pt-48 pb-24 text-center">
+            <h1 class="text-5xl font-black mb-6">데이터 라이브러리</h1>
+            <p class="text-slate-400 text-xl">정책 연구 및 최신 사례 데이터베이스</p>
+        </header>
+        <div class="max-w-4xl mx-auto py-32 px-6 text-center text-slate-400">
+            <div class="w-20 h-20 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-8">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+            </div>
+            <p class="text-2xl font-medium">콘텐츠를 준비 중입니다.</p>
+        </div>
+    </div>
+
+    <!-- Word Definition Modal -->
+    <div id="modalOverlay" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-card bg-white p-10 rounded-[3rem] shadow-2xl w-[90%] max-w-md border border-slate-100" onclick="event.stopPropagation()">
+            <div class="mb-6">
+                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-600 text-xs font-black rounded-full mb-3 uppercase tracking-tighter">AI Glossary</span>
+                <h4 id="modalTitle" class="text-3xl font-black text-slate-900"></h4>
+            </div>
+            <p id="modalDesc" class="text-slate-600 leading-relaxed text-lg"></p>
+            <button class="mt-10 w-full bg-slate-900 text-white py-4 rounded-2xl font-bold text-lg hover:bg-slate-800 transition-colors" onclick="closeModal()">닫기</button>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = "REPLACE_WITH_API_KEY"; 
+        const modelName = "gemini-1.5-flashgemini-1.5-flash";
+
+        const dictionary = {
+            "AI 디지털 교과서": "학생의 학습 수준과 특성에 맞춰 최적의 학습 경로를 제공하는 지능형 디지털 교과서입니다.",
+            "K-에듀테크": "대한민국의 우수한 교육 콘텐츠와 IT 기술이 결합된 교육 소프트웨어 및 하드웨어 산업을 의미합니다.",
+            "지능형 행정 보조": "교사의 업무 부담을 줄이기 위해 행정 처리 및 문서 작업을 자동화하거나 지원하는 AI 시스템입니다.",
+            "AI 코스웨어": "수업 목표에 따라 AI가 학습 경로와 콘텐츠를 지능적으로 설계하고 운영하는 소프트웨어입니다.",
+            "AI 계약학과": "산업체와 대학이 협력하여 기업 맞춤형 인재를 양성하기 위해 운영되는 전문 학과입니다.",
+            "데이터 주권": "학생이 자신의 학습 데이터가 생성되고 활용되는 과정을 스스로 통제하고 결정할 수 있는 권리입니다.",
+            "디지털 포용 정책": "디지털 기술의 혜택을 누구나 공평하게 누릴 수 있도록 정보 격차를 해소하는 복지 정책입니다.",
+            "디지털 리터러시 교육": "디지털 환경에서 정보를 이해, 비판적으로 평가, 활용 및 생산할 수 있는 능력을 기르는 교육입니다."
+        };
+
+        function switchPage(pageId) {
+    // 1. 라이브러리(b) 버튼을 눌렀을 때 실행
+    if (pageId === 'b') {
+        window.location.href = 'b.html'; 
+        return; 
+    }
+
+    // 2. 메인 요약(a) 버튼을 눌렀을 때 실행
+    document.querySelectorAll('.page-content').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.page-nav button').forEach(b => b.classList.remove('active'));
+    
+    const targetPage = document.getElementById(`page-${pageId}`);
+    const targetBtn = document.getElementById(`btn-page-${pageId}`);
+    
+    if (targetPage && targetBtn) {
+        targetPage.classList.add('active');
+        targetBtn.classList.add('active');
+    }
+    
+    window.scrollTo(0, 0);
+}
+        async function askAI() {
+            const query = document.getElementById('aiQuery').value;
+            const resDiv = document.getElementById('aiResponse');
+            if(!query) return;
+
+            resDiv.innerText = "답변을 생성 중입니다...";
+            try {
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`;
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        contents: [{ parts: [{ text: `대한민국 인공지능 행동계획 파일의 교육 관련 정책들에 근거하여 답변해줘. 질문: ${query}` }] }] 
+                    })
+                });
+                const data = await response.json();
+                resDiv.innerText = data.candidates?.[0]?.content?.parts?.[0]?.text || "답변을 불러올 수 없습니다.";
+                resDiv.classList.remove('italic');
+            } catch (e) {
+                resDiv.innerText = "오류가 발생했습니다. 잠시 후 다시 시도해 주세요.";
+            }
+        }
+
+        function openModal(term) {
+            document.getElementById('modalTitle').innerText = term;
+            document.getElementById('modalDesc').innerText = dictionary[term] || "설명을 준비 중입니다.";
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+
+        function closeModal() { document.getElementById('modalOverlay').classList.remove('active'); }
+
+        window.onscroll = function() {
+            const winScroll = document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById("progress-bar").style.width = (winScroll / height) * 100 + "%";
+            reveal();
+        };
+
+        function reveal() {
+            document.querySelectorAll(".reveal").forEach(r => {
+                if (r.getBoundingClientRect().top < window.innerHeight - 50) r.classList.add("active");
+            });
+        }
+
+        window.onload = () => reveal();
+    </script>
+</body>
+</html>
