@@ -1,13 +1,78 @@
 {
-  "article": [
-    {
-      "source": "알림",
-      "date": "2026-04-07",
-      "title": "데이터 연결 성공!",
-      "summary": "이제 파일들이 모두 같은 위치에 있어 정상적으로 작동합니다.",
-      "link": "https://google.com"
-    }
-  ],
-  "paper": [],
-  "book": []
+    "article": [
+        {
+            "title": "‘AI 디지털 교과서’ 2026 전면 확대··· 교실 내 ‘10G급 무선망’ 인프라 총력전",
+            "date": "2026.04.07",
+            "source": "교육을 비추다",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYSExxX0dSZkhiS0otb0VpQV9XYnBlTWt6cGFkZjBPYjA5Y19ST0Nic1pBNXY5TGprMk9qcXdVM2o5ZFhINVZodjRWZUNkN085Z1ZiMVdJdmdXcEFucS1wRXo3WGx3QQ?oc=5"
+        },
+        {
+            "title": "‘AI 교과서’ 논란에 속도 조절…국어 빠지고 사회·과학 1년 늦춘다",
+            "date": "2026.04.07",
+            "source": "경향신문",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xOVFxdllvUVpDRmRpSHJwMGJ0SXY0emVDXzJyTjlxaUd3dXRWYlZIdmtkTUVscmVsZUpxcm9vTGV3ZEcxVDdoaFJ0VDA3dXVJU3RRSlRZN1lzUXPSAWBBVV95cUxPU3pwTXNjb3pjMmF3TEhKM24zU1lSamQ1Z3RMWjVtM1ZBWC1LeWJydmlhUGdYc0hFS2xaSVJSVVcwVWNsOGVvZGlVZHZlMTJwLVRtUXYtVTg4MHp1aTY3Rkc?oc=5"
+        },
+        {
+            "title": "‘AI 디지털교과서’ 국어, 기술·가정 교과 제외…사회, 과학 교과 2027년부터 적용",
+            "date": "2026.04.07",
+            "source": "한국대학신문",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1qU3Jua2tIX09PSG1UWklLVXFmSVhnRlY1RHNGVzBRQ2EtWndwTDhoTFYyN0pzLWVGRTl5SU90bDU5bUFUYmR1WDhSODhvSFo1b2F5UWw4X2N1TzgyeTdhV1NsVXJlQQ?oc=5"
+        },
+        {
+            "title": "내년 AI 디지털교과서, 영어·수학·정보에 집중…국어·실과는 제외",
+            "date": "2026.04.07",
+            "source": "대한민국 정책브리핑",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9TRk14VzR4alh4WlJvVm85eTF6LXlxOXNJQzZJT0V6Z282b2cyc3dTQzlfc2Jxd1RRSUNrdlFtWkJ5eFhWTTVaY2JEdXkwUGVueHViSjlTUDFtcE1xa1p1NUdYTHNqUVRfdHRhSg?oc=5"
+        },
+        {
+            "title": "[단독] AI디지털교과서, 2026년 국어, 기술·가정 제외 논의",
+            "date": "2026.04.07",
+            "source": "에듀프레스",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UOVRkNEgwZDBOZjZyT3dvV3Y3WWtqMTQ2NzZEX296SmlYOXFIQ1ZYRDBhbHZjRTFzaDVEYmJqQ2hLR1lYSWJJeTdOTm1wbFhnYlhUNUhpQTNBQVZvblZmODlLRVlaUFAt?oc=5"
+        },
+        {
+            "title": "엘리스그룹, 초∙중등 국어 AI 디지털교과서 프로토타입 개발",
+            "date": "2026.04.07",
+            "source": "AI타임스",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SX2lJMGMxRUVGaGhfemFuSVMwQ0xubjBJbUJ5bXFwZ3J5MXZ5R1JJaFJKeHFsRE1FVTNKVUVJRzZTdDktNHNnNElETkVQVVpXT0F2a0lNbGh2WEwzeWZLeDJ4MzBzVEE4MWc?oc=5"
+        }
+    ],
+    "paper": [
+        {
+            "title": "생성형 AI를 활용한 국어과 쓰기 교육 방안 연구",
+            "date": "2024.02",
+            "source": "한국국어교육학회 (RISS)",
+            "summary": "ChatGPT 등 생성형 AI를 활용한 중등 작문 교육의 실제 교수학습 모형을 제안한 실존 학술 논문입니다.",
+            "link": "https://www.riss.kr/search/detail/DetailView.do?p_mat_type=1a0229061d485f4b&control_no=c6f4948a27d2c310d18150b13f29c094"
+        },
+        {
+            "title": "2022 개정 교육과정에 따른 AI 리터러시 교육의 방향 탐색",
+            "date": "2023.05",
+            "source": "한국교육과정평가원 (KICE)",
+            "summary": "국가 교육과정 개정에 따른 AI 리터러시의 교과별 통합 방안을 다룬 실제 정책 연구 보고서입니다.",
+            "link": "https://www.kice.re.kr/resrchBoard/view.do?seq=810"
+        }
+    ],
+    "book": [
+        {
+            "title": "나는 AI와 공부한다 (살만 칸)",
+            "date": "2024.06",
+            "source": "위즈덤하우스 (교보문고)",
+            "summary": "칸 아카데미 설립자 살만 칸이 집필한 실제 도서로, AI 시대 맞춤형 교육의 미래를 다루고 있습니다.",
+            "link": "https://product.kyobobook.co.kr/detail/S000213562624"
+        },
+        {
+            "title": "챗GPT 교육 혁명: 인공지능 시대, 학교의 미래",
+            "date": "2023.03",
+            "source": "한빛비즈 (교보문고)",
+            "summary": "현직 교사들이 챗GPT를 수업에 활용하는 실제 사례와 교육적 함의를 담은 실존 도서입니다.",
+            "link": "https://product.kyobobook.co.kr/detail/S000201202863"
+        }
+    ]
 }
