@@ -1,0 +1,61 @@
+name: Daily AI Update and Deploy
+
+on:
+  schedule:
+    - cron: '0 22 * * *' # 한국 시간 오전 7시
+  push:
+    branches: [ "main" ] # 코드를 수정해서 올릴 때도 실행
+  workflow_dispatch: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 
+      
+      - name: Python Setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Install Libraries
+        run: pip install requests beautifulsoup4 lxml
+        
+      - name: Run Script
+        run: python update_news.py
+        
+      # [추가] API 키 주입 (메인 페이지 AI 기능을 위해 필요)
+      - name: Inject API Key
+        run: |
+          sed -i "s/REPLACE_WITH_API_KEY/${{ secrets.GEMINI_API_KEY }}/g" index.html
+
+      # 뉴스 데이터를 저장소에 기록
+      - name: Update GitHub Data
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          git add data.json
+          git commit -m "Auto Update: Latest AI News" || echo "No changes"
+          git push
+
+      # [추가] 웹사이트 반영을 위한 빌드 유물 생성
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
