@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI EDU - 지식 라이브러리</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@100;400;700;900&display=swap');
+        body { font-family: 'Pretendard', sans-serif; background-color: #f8fafc; }
+        .nav-link.active { color: #2563eb; font-weight: 700; position: relative; }
+        .nav-link.active::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 100%; height: 2px; background: #2563eb; }
+        .filter-btn.active { background-color: #2563eb !important; color: white !important; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
+        .card-anim { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .card-anim:hover { transform: translateY(-4px); box-shadow: 0 12px 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body class="text-slate-900 pb-20">
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex justify-between items-center">
+            <div class="flex-shrink-0 flex items-center">
+                <a href="index.html" class="text-xl font-bold text-blue-600 flex items-center">
+                    <i class="fas fa-graduation-cap mr-2"></i> 미래 국어교사 AI EDU
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">행동계획 요약</a>
+                <a href="b.html" class="nav-link active">지식 라이브러리</a>
+                <a href="c.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">AI 역량 로드맵</a>
+            </div>
+        </div>
+    </nav>
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div>
+                <h2 class="text-4xl font-black tracking-tight text-slate-800">지식 라이브러리</h2>
+                <p class="text-slate-500 mt-2">최신 AI 교육 자료를 실시간으로 불러옵니다.</p>
+            </div>
+            <div class="flex p-1.5 bg-slate-100 rounded-2xl w-fit border border-slate-200">
+                <button onclick="filterLibrary('all')" id="f-all" class="filter-btn active px-6 py-2.5 rounded-xl font-bold text-sm transition-all">전체</button>
+                <button onclick="filterLibrary('article')" id="f-article" class="filter-btn px-6 py-2.5 rounded-xl font-bold text-sm text-slate-500 transition-all">기사</button>
+                <button onclick="filterLibrary('paper')" id="f-paper" class="filter-btn px-6 py-2.5 rounded-xl font-bold text-sm text-slate-500 transition-all">논문</button>
+            </div>
+        </div>
+        <div id="libraryList" class="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+            <p class="text-center py-20 text-slate-400 col-span-full">데이터 로딩 중...</p>
+        </div>
+    </div>
+    <script>
+    let libraryData = { article: [], paper: [], book: [] };
+    async function fetchLatestData() {
+        const list = document.getElementById('libraryList');
+        try {
+            // 같은 폴더에 있는 data.json을 불러옵니다.
+            const response = await fetch('data.json?v=' + new Date().getTime());
+            if (!response.ok) throw new Error('데이터 로드 실패');
+            const data = await response.json();
+            libraryData.article = data.article || data.news || [];
+            libraryData.paper = data.paper || [];
+            libraryData.book = data.book || [];
+            filterLibrary('all');
+        } catch (error) {
+            list.innerHTML = "<p class='col-span-full text-center py-20 text-slate-400 font-bold'>data.json 파일을 찾을 수 없습니다.</p>";
+        }
+    }
+    function filterLibrary(category) {
+        document.querySelectorAll('.filter-btn').forEach(btn => { btn.classList.remove('active', 'bg-white', 'text-blue-600', 'shadow-sm'); btn.classList.add('text-slate-500'); });
+        document.getElementById(`f-${category}`).classList.add('active', 'bg-white', 'text-blue-600', 'shadow-sm');
+        const list = document.getElementById('libraryList');
+        list.innerHTML = "";
+        let items = (category === 'all') ? [...libraryData.article, ...libraryData.paper, ...libraryData.book] : libraryData[category] || [];
+        items.forEach(item => {
+            const card = `<div class="bg-white p-8 rounded-[2rem] border border-slate-100 flex flex-col gap-4 shadow-sm transition-all hover:shadow-md card-anim">
+                <div>
+                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-2.5 py-1 rounded-md">${item.source} · ${item.date}</span>
+                    <h3 class="text-xl font-bold mt-3 mb-3 text-slate-900 leading-snug">${item.title}</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-3">${item.summary || item.description}</p>
+                    <a href="${item.link}" target="_blank" class="inline-block bg-slate-900 text-white px-6 py-2.5 rounded-xl font-bold text-xs hover:bg-blue-600 transition-colors shadow-sm">원문 보기</a>
+                </div>
+            </div>`;
+            list.insertAdjacentHTML('beforeend', card);
+        });
+    }
+    window.onload = fetchLatestData;
+    </script>
+</body>
+</html>
