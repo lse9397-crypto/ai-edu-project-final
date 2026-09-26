@@ -1,17 +1,8 @@
 {
     "article": [
         {
-            "title": "[AI 시대 한국 사회를 다시 설계하자]‘혁신’이란 이름의 수업…학생은 데이터가 아니고 교사는 관리자가 아니다",
-            "date": "2026.09.25",
-            "source": "경향신문",
-            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
-            "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5BYWRrbmZwVTVRMXdyR0N3djl5TXZCbUh5T241eG5WcGtNTUVFTVlJX21CR3dBV1Zrdk5XMmRIWG5NYTc2TlFGc1AwZGZBQXByUU96ZHJZWFNXQVhlTmRz0gFfQVVfeXFMTkFhZGtuZnBVNVExd3JHQ3d2OXlNdkJtSHlPbjV4blZwa01NRUVNWUlfbUJHd0FXVmt2TlcyZEhYbk1hNzZOUUZzUDBkZkFBcHJRT3pkcllYU1dBWGVOZHM?oc=5",
-            "category": "article",
-            "type": "article"
-        },
-        {
             "title": "‘AI 디지털 교과서’ 2026 전면 확대··· 교실 내 ‘10G급 무선망’ 인프라 총력전",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "교육을 비추다",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYSExxX0dSZkhiS0otb0VpQV9XYnBlTWt6cGFkZjBPYjA5Y19ST0Nic1pBNXY5TGprMk9qcXdVM2o5ZFhINVZodjRWZUNkN085Z1ZiMVdJdmdXcEFucS1wRXo3WGx3QQ?oc=5",
@@ -19,8 +10,17 @@
             "type": "article"
         },
         {
+            "title": "‘AI 교과서’ 논란에 속도 조절…국어 빠지고 사회·과학 1년 늦춘다",
+            "date": "2026.09.26",
+            "source": "경향신문",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mWF9OTEUxcUw3YVhOM2Y3b2JLQzJ4czQ2MVRDOXlOMDRVTFRsd1ZOb3B5Vm93YkZJQjVlUXk5UWg2dXE3WThlNkN1dVNJdDNrd0xYb0pOdTJDQdIBX0FVX3lxTE0xRUZRdUYxcXJnT1FYVlBTdVRVc0ZIc2xtMGx0SGxrcmVnYUZqXzJxLXRpT09xMVVaejBJRTR0MDNMWXVZdmszWUQ4OWZYX0hncTNuaVdaeDljb2NTc1Rv?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
             "title": "국교위 '2028 차세대 AI 교육과정' 재설계... 단순 활용 넘어 전 교과 융합으로",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "교육을 비추다",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9sbUFyZVc4bXFOTXVCVmdET2dROXFMQnlUaDBDLWZ0NEhDM2haVmFYQ0NGQnNXcmE2WVA4QXN2aUViWjRTdV9iNmpyYWxsalI5WDRtRk1qaFpyRmZLMWlCQ1Z3Y0M0QQ?oc=5",
@@ -29,8 +29,8 @@
         },
         {
             "title": "2025년에 수학·영어·정보·국어(특수교육) ‘AI 디지털교과서’ 우선 도입",
-            "date": "2026.09.25",
-            "source": "korea.kr",
+            "date": "2026.09.26",
+            "source": "대한민국 정책브리핑",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54NWkzV01QVXEzNHlkSUc1RlRrdVJKcm1EaGdCcDBXOFgweHh6czZ4WERjN1pWcmxYYndHRkFiWEJTVUxWTXVBRTkxa1pBc0p6eHVmQURTSWw4WHBBWGo1c2lVTkdHZGNXN1BQeA?oc=5",
             "category": "article",
@@ -38,7 +38,7 @@
         },
         {
             "title": "‘AI 디지털교과서’ 국어, 기술·가정 교과 제외…사회, 과학 교과 2027년부터 적용",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "한국대학신문",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1qU3Jua2tIX09PSG1UWklLVXFmSVhnRlY1RHNGVzBRQ2EtWndwTDhoTFYyN0pzLWVGRTl5SU90bDU5bUFUYmR1WDhSODhvSFo1b2F5UWw4X2N1TzgyeTdhV1NsVXJlQQ?oc=5",
@@ -47,8 +47,8 @@
         },
         {
             "title": "엘리스그룹, 초∙중등 국어 AI 디지털교과서 프로토타입 개발",
-            "date": "2026.09.25",
-            "source": "aitimes.com",
+            "date": "2026.09.26",
+            "source": "AI타임스",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SX2lJMGMxRUVGaGhfemFuSVMwQ0xubjBJbUJ5bXFwZ3J5MXZ5R1JJaFJKeHFsRE1FVTNKVUVJRzZTdDktNHNnNElETkVQVVpXT0F2a0lNbGh2WEwzeWZLeDJ4MzBzVEE4MWc?oc=5",
             "category": "article",
@@ -56,7 +56,7 @@
         },
         {
             "title": "엘리스그룹, 초·중등 국어 AI 디지털교과서 프로토타입 개발",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "지디넷코리아",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1wbEE1TUV0bFc1ZlhHdC1ZZGM0WF9yazN1VjhGWUo1RkRSc1llUzhGcFNWV1dyTzQ5YTNDM19Fd1FzTGFOMEV4SWZGT09wZVQ2aUlHSkRR?oc=5",
@@ -65,7 +65,7 @@
         },
         {
             "title": "“교육부 후퇴” .. AI 디지털교과서 국어·기술 도입 철회, 사회·과학 연기",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "에듀프레스",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43WWk0NUloU3cxYWE3Sjk4c05RUXJQZEpvNWtUcGdpQlVMZ3R0X09sNUNCMXVqZ1ktdXN6T3BHLUxfcndWU1IycFVmaHBMdlNvY3lmWTdxdC1ZZjJoMFBubi1FUzZqZWJm?oc=5",
@@ -75,17 +75,8 @@
     ],
     "news": [
         {
-            "title": "[AI 시대 한국 사회를 다시 설계하자]‘혁신’이란 이름의 수업…학생은 데이터가 아니고 교사는 관리자가 아니다",
-            "date": "2026.09.25",
-            "source": "경향신문",
-            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
-            "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5BYWRrbmZwVTVRMXdyR0N3djl5TXZCbUh5T241eG5WcGtNTUVFTVlJX21CR3dBV1Zrdk5XMmRIWG5NYTc2TlFGc1AwZGZBQXByUU96ZHJZWFNXQVhlTmRz0gFfQVVfeXFMTkFhZGtuZnBVNVExd3JHQ3d2OXlNdkJtSHlPbjV4blZwa01NRUVNWUlfbUJHd0FXVmt2TlcyZEhYbk1hNzZOUUZzUDBkZkFBcHJRT3pkcllYU1dBWGVOZHM?oc=5",
-            "category": "article",
-            "type": "article"
-        },
-        {
             "title": "‘AI 디지털 교과서’ 2026 전면 확대··· 교실 내 ‘10G급 무선망’ 인프라 총력전",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "교육을 비추다",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBYSExxX0dSZkhiS0otb0VpQV9XYnBlTWt6cGFkZjBPYjA5Y19ST0Nic1pBNXY5TGprMk9qcXdVM2o5ZFhINVZodjRWZUNkN085Z1ZiMVdJdmdXcEFucS1wRXo3WGx3QQ?oc=5",
@@ -93,8 +84,17 @@
             "type": "article"
         },
         {
+            "title": "‘AI 교과서’ 논란에 속도 조절…국어 빠지고 사회·과학 1년 늦춘다",
+            "date": "2026.09.26",
+            "source": "경향신문",
+            "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mWF9OTEUxcUw3YVhOM2Y3b2JLQzJ4czQ2MVRDOXlOMDRVTFRsd1ZOb3B5Vm93YkZJQjVlUXk5UWg2dXE3WThlNkN1dVNJdDNrd0xYb0pOdTJDQdIBX0FVX3lxTE0xRUZRdUYxcXJnT1FYVlBTdVRVc0ZIc2xtMGx0SGxrcmVnYUZqXzJxLXRpT09xMVVaejBJRTR0MDNMWXVZdmszWUQ4OWZYX0hncTNuaVdaeDljb2NTc1Rv?oc=5",
+            "category": "article",
+            "type": "article"
+        },
+        {
             "title": "국교위 '2028 차세대 AI 교육과정' 재설계... 단순 활용 넘어 전 교과 융합으로",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "교육을 비추다",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9sbUFyZVc4bXFOTXVCVmdET2dROXFMQnlUaDBDLWZ0NEhDM2haVmFYQ0NGQnNXcmE2WVA4QXN2aUViWjRTdV9iNmpyYWxsalI5WDRtRk1qaFpyRmZLMWlCQ1Z3Y0M0QQ?oc=5",
@@ -103,8 +103,8 @@
         },
         {
             "title": "2025년에 수학·영어·정보·국어(특수교육) ‘AI 디지털교과서’ 우선 도입",
-            "date": "2026.09.25",
-            "source": "korea.kr",
+            "date": "2026.09.26",
+            "source": "대한민국 정책브리핑",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE54NWkzV01QVXEzNHlkSUc1RlRrdVJKcm1EaGdCcDBXOFgweHh6czZ4WERjN1pWcmxYYndHRkFiWEJTVUxWTXVBRTkxa1pBc0p6eHVmQURTSWw4WHBBWGo1c2lVTkdHZGNXN1BQeA?oc=5",
             "category": "article",
@@ -112,7 +112,7 @@
         },
         {
             "title": "‘AI 디지털교과서’ 국어, 기술·가정 교과 제외…사회, 과학 교과 2027년부터 적용",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "한국대학신문",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1qU3Jua2tIX09PSG1UWklLVXFmSVhnRlY1RHNGVzBRQ2EtWndwTDhoTFYyN0pzLWVGRTl5SU90bDU5bUFUYmR1WDhSODhvSFo1b2F5UWw4X2N1TzgyeTdhV1NsVXJlQQ?oc=5",
@@ -121,8 +121,8 @@
         },
         {
             "title": "엘리스그룹, 초∙중등 국어 AI 디지털교과서 프로토타입 개발",
-            "date": "2026.09.25",
-            "source": "aitimes.com",
+            "date": "2026.09.26",
+            "source": "AI타임스",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5SX2lJMGMxRUVGaGhfemFuSVMwQ0xubjBJbUJ5bXFwZ3J5MXZ5R1JJaFJKeHFsRE1FVTNKVUVJRzZTdDktNHNnNElETkVQVVpXT0F2a0lNbGh2WEwzeWZLeDJ4MzBzVEE4MWc?oc=5",
             "category": "article",
@@ -130,7 +130,7 @@
         },
         {
             "title": "엘리스그룹, 초·중등 국어 AI 디지털교과서 프로토타입 개발",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "지디넷코리아",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1wbEE1TUV0bFc1ZlhHdC1ZZGM0WF9yazN1VjhGWUo1RkRSc1llUzhGcFNWV1dyTzQ5YTNDM19Fd1FzTGFOMEV4SWZGT09wZVQ2aUlHSkRR?oc=5",
@@ -139,7 +139,7 @@
         },
         {
             "title": "“교육부 후퇴” .. AI 디지털교과서 국어·기술 도입 철회, 사회·과학 연기",
-            "date": "2026.09.25",
+            "date": "2026.09.26",
             "source": "에듀프레스",
             "summary": "'AI 디지털 교과서 국어교육'와 관련된 최신 교육 뉴스입니다.",
             "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43WWk0NUloU3cxYWE3Sjk4c05RUXJQZEpvNWtUcGdpQlVMZ3R0X09sNUNCMXVqZ1ktdXN6T3BHLUxfcndWU1IycFVmaHBMdlNvY3lmWTdxdC1ZZjJoMFBubi1FUzZqZWJm?oc=5",
